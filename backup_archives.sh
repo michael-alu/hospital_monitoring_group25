@@ -18,7 +18,7 @@ for log in heart_rate_log.txt_*; do
 done
 
 # Copy archived data to a remote server
-scp $archive_directory/* "$user_name@$host_url:/home/"
+scp -r $archive_directory "$user_name@$host_url:/home/"
 
 # Prints a message if the operation is successful or not
 if [ $? -eq 0 ]; then
