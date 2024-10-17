@@ -19,9 +19,9 @@ This project is designed to handle data monitoring for a hospital system by reco
 
 The project consists of the following three shell scripts:
 
-1. *heart_rate_monitor.sh* - Script for heart rate monitoring.
-2. *archive_log.sh* - Script for archiving the heart rate log.
-3. *backup_archives.sh* - Script for backing up logs to a remote server.
+1. **heart_rate_monitor.sh** - Script for heart rate monitoring.
+2. **archive_log.sh** - Script for archiving the heart rate log.
+3. **backup_archives.sh** - Script for backing up logs to a remote server.
 
 ---
 
@@ -35,13 +35,14 @@ The project consists of the following three shell scripts:
 
 1. *Clone the repository*:
 
-   git clone https://github.com/michael-alu/hospital_monitoring_group25.git
+   ```git clone https://github.com/michael-alu/hospital_monitoring_group25.git```
    
-   cd hospital_monitoring_group25
+   ```cd hospital_monitoring_group25```
    
 
 2. *Make sure the scripts are executable in case they are not*:
-   chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh
+
+    ```chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh```
    
 
 ---
@@ -54,7 +55,7 @@ This script simulates monitoring the heart rate and logs the data every second.
 
 *Usage*:
 
-./heart_rate_monitor.sh
+```./heart_rate_monitor.sh```
 
 
 - The script will prompt for a device name (e.g., "Monitor_A", "Monitor_B").
@@ -67,12 +68,13 @@ This script simulates monitoring the heart rate and logs the data every second.
 
 
 2024-10-03 14:35:02 Monitor_A 61
+
 2024-10-03 14:35:03 Monitor_A 67
 
 
 *Check logs*:
 
-tail -f heart_rate_log.txt
+```tail -f heart_rate_log.txt```
 
 
 ---
@@ -83,7 +85,7 @@ This script archives the heart_rate_log.txt by renaming it with a timestamp.
 
 *Usage*:
 
-./archive_log.sh
+```./archive_log.sh```
 
 
 - The log file will be renamed in the format: heart_rate_log.txt_YYYYMMDD_HHMMSS.
@@ -102,7 +104,7 @@ This script moves the archived log files to the archived_logs_group25 directory 
 
 *Usage*:
 
-./backup_archives.sh
+```./backup_archives.sh```
 
 
 - All archived logs will be moved to the archived_logs_group25 directory.
