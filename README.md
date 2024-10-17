@@ -35,14 +35,12 @@ The project consists of the following three shell scripts:
 
 1. *Clone the repository*:
 
-   bash$
    git clone https://github.com/michael-alu/hospital_monitoring_group25.git
    
    cd hospital_monitoring_group25
    
 
 2. *Make sure the scripts are executable in case they are not*:
-   bash
    chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh
    
 
