@@ -21,14 +21,13 @@ The project consists of the following three shell scripts:
 
 1. *heart_rate_monitor.sh* - Script for heart rate monitoring.
 2. *archive_log.sh* - Script for archiving the heart rate log.
-3. *backup_archives.sh* - Script for archiving and backing up logs to a remote server.
+3. *backup_archives.sh* - Script for backing up logs to a remote server.
 
 ---
 
 ## Requirements
 
 - Linux environment (tested on Ubuntu 20.04)
-- SSH access to a remote server
 - Bash shell (version 5 or higher)
 - Internet connection for remote backups
 
@@ -44,7 +43,7 @@ The project consists of the following three shell scripts:
 
 2. *Make sure the scripts are executable in case they are not*:
    bash
-   chmod +x heart_rate_monitor.sh archive_log.sh backup_archives.sh
+   chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh
    
 
 ---
