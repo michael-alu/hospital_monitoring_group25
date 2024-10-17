@@ -54,7 +54,6 @@ This script simulates monitoring the heart rate and logs the data every second.
 
 *Usage*:
 
-bash
 ./heart_rate_monitor.sh
 
 
@@ -73,7 +72,6 @@ bash
 
 *Check logs*:
 
-bash
 tail -f heart_rate_log.txt
 
 
@@ -85,7 +83,6 @@ This script archives the heart_rate_log.txt by renaming it with a timestamp.
 
 *Usage*:
 
-bash
 ./archive_log.sh
 
 
@@ -105,12 +102,11 @@ This script moves the archived log files to the archived_logs_group25 directory 
 
 *Usage*:
 
-bash
 ./backup_archives.sh
 
 
 - All archived logs will be moved to the archived_logs_group25 directory.
-- The script will back up the files to Munana's server using scp with SSH authentication.
+- The script will back up the files to **Munana**'s server in the home directory using scp with SSH authentication.
 
 ---
 
