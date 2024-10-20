@@ -9,9 +9,21 @@ This project is designed to handle data monitoring for a hospital system by reco
 - [Michael Nwuju](https://github.com/michael-alu): Present
 - [Yvette Muhoracyeye](https://github.com/Yvette334): Present
 - [Merveille Munana](https://github.com/Munana122): Present
+- [DaVinci Murengezi Gisanura](https://github.com/DaVinci34162): Present
 - DAN ORRIE NKUSI: Absent
-- DaVinci Murengezi Gisanura: Absent
 - Rene Pascal Mugisha: Excused (Out of the country)
+
+---
+## Group Session Attendance Report
+
+Here is a detailed report of the following sessions we had, the times we had this session, members present and members absent.
+
+
+| **Session**                                    | **Date (DD/MM/YYYY)**      | **Members Present**                                               | **Members Absent** |
+|------------------------------------------------|---------------|-----------------------------------------------------------|------------|
+| 1. Implement the features                | 14/10/2024    | Michael, Yvette        | Merveille, DaVinci, Dan, Rene       |
+| 2. Set up the README for the project              | 17/10/2024    | Michael, Merveille, Yvette        | DaVinci, Dan, Rene       |
+| 3. Improve the README (Make it more appealing)              | 20/10/2024    | Michael, Merveille, Yvette, DaVinci        | Dan, Rene       |
 
 ---
 
@@ -35,14 +47,19 @@ The project consists of the following three shell scripts:
 
 1. *Clone the repository*:
 
-   ```git clone https://github.com/michael-alu/hospital_monitoring_group25.git```
+
+```
+   git clone https://github.com/michael-alu/hospital_monitoring_group25.git
    
-   ```cd hospital_monitoring_group25```
-   
+   cd hospital_monitoring_group25
+```
+
 
 2. *Make sure the scripts are executable in case they are not*:
 
-    ```chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh```
+```
+    chmod u+x heart_rate_monitor.sh archive_log.sh backup_archives.sh
+```
    
 
 ---
@@ -55,7 +72,9 @@ This script simulates monitoring the heart rate and logs the data every second.
 
 *Usage*:
 
-```./heart_rate_monitor.sh```
+```
+./heart_rate_monitor.sh
+```
 
 
 - The script will prompt for a device name (e.g., "Monitor_A", "Monitor_B").
@@ -74,7 +93,9 @@ This script simulates monitoring the heart rate and logs the data every second.
 
 *Check logs*:
 
-```tail -f heart_rate_log.txt```
+```
+tail -f heart_rate_log.txt
+```
 
 
 ---
@@ -85,7 +106,9 @@ This script archives the heart_rate_log.txt by renaming it with a timestamp.
 
 *Usage*:
 
-```./archive_log.sh```
+```
+./archive_log.sh
+```
 
 
 - The log file will be renamed in the format: heart_rate_log.txt_YYYYMMDD_HHMMSS.
@@ -104,7 +127,9 @@ This script moves the archived log files to the archived_logs_group25 directory 
 
 *Usage*:
 
-```./backup_archives.sh```
+```
+./backup_archives.sh
+```
 
 
 - All archived logs will be moved to the archived_logs_group25 directory.
